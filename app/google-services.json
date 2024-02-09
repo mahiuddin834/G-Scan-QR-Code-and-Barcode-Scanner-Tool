@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "952287702455",
+    "project_id": "g-scan-qr-code-scaner",
+    "storage_bucket": "g-scan-qr-code-scaner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952287702455:android:423948cefa0308a7858c32",
+        "android_client_info": {
+          "package_name": "com.itnation.gscan_qrcodescaner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSj93JzAMkzwleONVYnalkM1yj3f0d1jM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

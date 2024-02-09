@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        >
+
+
+    <item
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:checkable="true"
+
+        />
+
+    <item
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Scanner Tool"
+        android:icon="@drawable/scan"
+        android:checkable="true"
+
+        />
+
+    <item
+        android:id="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Generator Tool"
+        android:icon="@drawable/generate"
+        android:checkable="true"
+
+        />
+
+
+
+    </group>
+
+    <item
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Rate US"
+        android:icon="@drawable/baseline_stars_24"
+        android:checkable="true"
+
+        />
+
+
+</menu>

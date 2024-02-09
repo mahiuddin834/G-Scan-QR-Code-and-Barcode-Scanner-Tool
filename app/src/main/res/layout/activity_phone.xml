@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MailActivity"
+    android:background="#FAC9DA">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF80AB"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            >
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#FF80AB"
+                android:layout_gravity="start"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="25dp"
+                android:gravity="start"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EditLay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        app:hintEnabled="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <EditText
+            android:id="@+id/phoneEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_shape"
+            android:backgroundTint="#FAA6C2"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/generateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditLay1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#FF80AB"
+        android:text="Generate"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/edit_text_shape" />
+
+
+    <LinearLayout
+        android:id="@+id/qrLay"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/generateBtn"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/qrCodeIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@color/black"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/shareSaveLaye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/qrLay"
+        android:layout_marginEnd="40sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_text_shape"
+            android:backgroundTint="#FF80AB"
+            android:src="@drawable/share"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_text_shape"
+            android:backgroundTint="#FF80AB"
+            android:src="@drawable/save"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GScanQRCodeScaner" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/my_dark_primary</item>
+
+        <item name="android:statusBarColor">@color/my_dark_primary</item>
+    </style>
+
+    <style name="Theme.GScanQRCodeScaner" parent="Base.Theme.GScanQRCodeScaner" />
+</resources>
